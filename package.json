@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://hpanchal17.github.io/React-project-ci-cd",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
