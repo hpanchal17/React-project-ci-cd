@@ -1,5 +1,14 @@
 name: Deploy process
-on: push
+# on: [push,workflow_dispatch]
+on: 
+    push:
+        branches:
+            - main
+            - 'feature/**'
+        paths-ignore:
+            - '.github/worklows/*'
+            - .README.md     
+    workflow_dispatch: 
 jobs: 
     test: 
         runs-on: ubuntu-latest
